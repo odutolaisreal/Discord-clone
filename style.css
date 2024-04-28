@@ -9,23 +9,14 @@
   font-family: "ABC Ginto Normal Unlicensed Trial", sans-serif;
 }
 @import url("https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial");
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   /* max-width: 100%; */
   min-width: 1000px;
 }
-.homepage {
-  background-image: url(./assets/644fab4df2dc8d7a9a081ebd_8a8375ab7908384e1fd6efe408284203.svg),
-    url(./assets/644fab4db9ca0a124b73d4b7_c40c84ca18d84633a9d86b4046a91437.svg),
-    url(./assets/644fab4da9dbd93a7dfae97b_e6d57714479874c665b36c7adee76b1d.svg);
-  background-position: -57% 100%, 146.5% 100%, 50% 100%;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 51%, 52%, auto;
-  min-height: auto;
-  height: 90vh;
-  padding-top: 0;
-  background-color: #404eed;
-}
+
 nav {
   display: flex;
   padding: 20px 0 25px 85px;
@@ -64,6 +55,18 @@ nav ul {
   font-weight: 700;
   line-height: 24px;
   transition: all 0.2s;
+}
+.homepage {
+  background-image: url(./assets/644fab4df2dc8d7a9a081ebd_8a8375ab7908384e1fd6efe408284203.svg),
+    url(./assets/644fab4db9ca0a124b73d4b7_c40c84ca18d84633a9d86b4046a91437.svg),
+    url(./assets/644fab4da9dbd93a7dfae97b_e6d57714479874c665b36c7adee76b1d.svg);
+  background-position: -57% 100%, 146.5% 100%, 50% 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 51%, 52%, auto;
+  min-height: auto;
+  height: 90vh;
+  padding-top: 0;
+  background-color: #404eed;
 }
 .homepage_txt {
   position: relative;
@@ -156,6 +159,7 @@ nav ul {
   padding-top: 10%;
   margin-top: 10%;
   padding-bottom: 10%;
+  max-width: 100%;
 }
 .reliable-txt h3 {
   /* margin-bottom: 24px; */
@@ -182,11 +186,7 @@ nav ul {
   padding-left: 7%;
   padding-right: 7%;
 }
-.journey h3 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  font-family: "ABCGintoNormal-Bold", sans-serif;
-}
+
 .reliable-tech button {
   grid-column-gap: 8px;
   grid-row-gap: 8px;
@@ -221,6 +221,14 @@ nav ul {
   bottom: auto;
   left: -6%;
   right: 0%;
+}
+.journey h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: "ABCGintoNormal-Bold", sans-serif;
+}
+.journey {
+  max-width: 100%;
 }
 .journey img {
   width: 60px;
@@ -260,4 +268,7 @@ footer {
   width: 7%;
   border-radius: 25px;
   float: right;
+}
+@media (min-width:320px) and (max-width:768px) {
+~
 }
