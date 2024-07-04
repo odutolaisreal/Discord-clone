@@ -1,2 +1,1 @@
-# Discord-clone
-# Discord-clone
+### This is a discord clone without responsiveness
